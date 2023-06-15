@@ -9,6 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.BingPage;
 
+import static org.assertj.core.api.Assertions.*;
+
 public class BingSteps {
     WebDriver driver;
 
@@ -27,6 +29,7 @@ public class BingSteps {
 
     @Then("First three results contains {string}")
     public void firstThreeResultsContains(String arg0) {
+        assertThat(1).isEqualTo(10);
         driver.quit();
     }
 }
